@@ -1,29 +1,139 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
+    <meta charset="UTF-8">
     <title>Profil Saya</title>
 
     <style>
         body {
             margin: 0;
-            background: black;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #000000, #1a1a1a);
+            color: white;
         }
 
-        img {
-            max-width: 90%;
-            max-height: 90%;
-            object-fit: contain;
+        .container {
+            width: 100%;
+            min-height: 100vh;
+            padding: 30px;
+            box-sizing: border-box;
+        }
+
+        .card {
+            max-width: 500px;
+            margin: auto;
+            background: #111;
+            border-radius: 20px;
+            padding: 25px;
+            text-align: center;
+            box-shadow: 0 0 20px rgba(255,255,255,0.1);
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid white;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            margin: 10px 0;
+        }
+
+        .info {
+            text-align: left;
+            margin-top: 20px;
+        }
+
+        .info p {
+            margin: 10px 0;
+            font-size: 16px;
+        }
+
+        .label {
+            font-weight: bold;
+            color: #00ffff;
+        }
+
+        .social {
+            margin-top: 20px;
+        }
+
+        .social a {
+            color: #00ffff;
+            text-decoration: none;
+        }
+
+        .section {
+            margin-top: 40px;
+        }
+
+        .long-section {
+            max-width: 600px;
+            margin: auto;
+            margin-top: 40px;
+            line-height: 1.6;
         }
     </style>
-
 </head>
 <body>
 
-    <img src="profil.png" alt="Foto Canva">
+<div class="container">
+
+    <!-- CARD PROFIL -->
+    <div class="card">
+        <!-- GANTI LINK FOTO DI SINI -->
+        <img src="foto.jpg" class="profile-img">
+
+        <h1>MUHAMAD FATHAN FARIZ</h1>
+
+        <div class="info">
+            <p><span class="label">Website:</span> BIODATA DIRI</p>
+            <p><span class="label">Kelas:</span> XII TJKT 1</p>
+            <p><span class="label">Sekolah:</span> SMK KOMPUTAMA MAJENANG</p>
+            <p><span class="label">Hobi:</span> MAIN</p>
+            <p><span class="label">Cita-cita:</span> SUKSES</p>
+        </div>
+
+        <div class="social">
+            <p><span class="label">Instagram:</span> 
+                <a href="https://instagram.com/muhamadfthn_" target="_blank">
+                    @muhamadfthn_
+                </a>
+            </p>
+        </div>
+    </div>
+
+    <!-- BAGIAN PANJANG KE BAWAH -->
+    <div class="long-section">
+        <div class="section">
+            <h2>Tentang Saya</h2>
+            <p>
+                Halo! Saya MUHAMAD FATHAN FARIZ. Saya adalah seorang pelajar yang memiliki minat
+                dalam dunia teknologi dan ingin terus berkembang menjadi lebih baik setiap hari.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>Tujuan Hidup</h2>
+            <p>
+                Cita-cita saya adalah menjadi orang sukses dan membanggakan orang tua.
+                Saya percaya dengan usaha dan kerja keras, semua bisa tercapai.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>Aktivitas</h2>
+            <p>
+                Saya suka bermain (main), belajar hal baru, dan mencoba hal-hal yang bisa
+                meningkatkan kemampuan saya di masa depan.
+            </p>
+        </div>
+    </div>
+
+</div>
 
 </body>
-</html>
+    </html>
